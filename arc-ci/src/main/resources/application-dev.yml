@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/arc_ci?serverTimezone=Hongkong&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: fur@6289
+  #  jpa:
+  #    open-in-view: true
+  #    properties:
+  #      hibernate:
+  #        show_sql: true
+  #        format_sql: true
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+  thymeleaf:
+    mode: HTML5
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8080
+
+meta:
+  gitlabUrl: http://172.17.218.144:7780
+  accessToken: NqrpKRLWThcVz8FyssnK
